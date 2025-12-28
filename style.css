@@ -1,0 +1,903 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('assets/img/hero-bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+    isolation: isolate; 
+}
+
+/* The Overlay */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(80, 128, 102, 0.85); 
+    z-index: -1; 
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+   
+    position: relative; 
+    z-index: 10; 
+}
+
+#logo {
+    max-width: 140px;
+    position: relative;
+    z-index: 11;
+    
+   
+    filter: brightness(0) invert(1) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-top: 20px;
+}
+
+.intro-tagline {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.ellipse {
+    width: 9px;
+    height: 9px;
+    background: #E4CA90;
+    border-radius: 50%;
+}
+
+#Luxury-Postnatal-Care {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #E4CA90;
+}
+
+.brand-title {
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.brand-title span {
+    color: #E4CA90;
+}
+
+#intro-pera {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+/* Stars */
+.star-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.stars img {
+    width: 14px;
+    height: auto;
+}
+
+#five, #happy {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Horizontal Scroll List for Mobile */
+#Peaceful {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.peaceful-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    scrollbar-width: thin;
+}
+
+/* Each Card */
+.each-peaceful {
+    flex: 0 0 120px;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.each-peaceful img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.peaceful-list-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #19341A;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.peaceful-list-text p {
+    color: #fff;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.peaceful-btn {
+    display: block;           
+    margin: 10px auto;        
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    background-color: #D4BC7E;
+    color: #000;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.peaceful-btn:hover {
+    background-color: #e4ca90;
+}
+
+#discover {
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+/* About Section Styles */
+.about-section {
+    padding: 20px 0px;
+    background-color: #F9F7F2; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.about-header .line {
+    width: 40px;
+    height: 1px;
+    background-color: #19341A;
+}
+
+.about-tag {
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 400;
+    color: #508066;
+    margin: 0;
+    
+}
+
+.about-title {
+    font-family: poppins;
+    font-size: 16px;
+    color: #508066;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.about-subtitle {
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Green Card */
+.about-card {
+    background-color: #508066; 
+    color: #FFFFFF;
+    padding: 40px 30px;
+    
+    
+    width: 100% !important;
+}
+
+.about-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Stats Layout */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.stat-box {
+    text-align: center;
+    flex: 1;
+    background-color: #19341A33;
+    padding: 17px 9px 17px 9px;
+    border-radius: 13px;
+}
+
+.stat-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white; 
+}
+
+.stat-box p {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Desktop Adjustments */
+@media (min-width: 768px) {
+    .about-title {
+        font-size: 32px;
+    }
+    
+    .about-card {
+        padding: 50px 60px;
+    }
+
+    .stat-box h3 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+/* what we  offer section */
+
+/* Container Spacing */
+.offer-v2-section {
+    padding: 60px 20px;
+    background-color: #FDFBF7;
+    text-align: center;
+}
+
+/* Header Elements */
+.offer-v2-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.offer-v2-line {
+    width: 30px;
+    height: 1px;
+    background-color: #19341A;
+}
+
+.offer-v2-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #19341A;
+    margin: 0;
+}
+
+.offer-v2-title {
+    font-size: 26px;
+    color: #19341A;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.gold-highlight {
+    color: #D4BC7E;
+}
+
+.offer-v2-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Grid Layout (Mobile: 2 Columns) */
+.offer-v2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.offer-v2-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  
+    aspect-ratio: 1 / 1.15; 
+}
+
+.offer-v2-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Label Overlay */
+.offer-v2-label {
+    margin: 0 -11px 0 -11px;
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    right: 8px;
+    background: #3B3A3A7A;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px 4px;
+    border-radius: 6px;
+    text-align: center;
+    backdrop-filter: blur(3px); 
+}
+
+/* Desktop Styles (768px and up) */
+@media (min-width: 768px) {
+    .offer-v2-title {
+        font-size: 38px;
+    }
+
+    .offer-v2-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        max-width: 1000px;
+        gap: 24px;
+    }
+
+    .offer-v2-label {
+        font-size: 14px;
+        bottom: 15px;
+        padding: 12px;
+    }
+}
+/* what we offer ends */
+
+/* gallery section starts */
+:root {
+  --primary-green: #2D4A3E; 
+  --text-muted: #666;
+  --bg-cream: #F9F8F3; 
+}
+
+.gallery-container {
+  background-color: var(--bg-cream);
+  padding: 0px 16px; 
+  max-width: auto;    
+  margin: 0 ;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.gallery-header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+    font-family: poppins;
+
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--primary-green);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.title {
+    font-family: poppins;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-green);
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-family: poppins;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Grid Layout */
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.large-item {
+  aspect-ratio: 16 / 10;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 16px;
+}
+
+.small-item {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+}
+
+/* Play Button Overlay */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+/* gallery updated */
+
+
+
+@media (min-width: 768px) {
+    
+    .gallery-container {
+        padding: 60px 16px;
+    }
+
+    
+    .gallery-content-inner {
+        max-width: 500px; 
+        margin: 0 auto;   
+    }
+
+    .gallery-grid {
+        gap: 20px; 
+    }
+}
+
+/* gallery section end */
+
+
+/* premium feciloties */
+
+.mn-section-wrapper {
+  padding: 32px 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.mn-bg-cream {
+  background-color: #F9F8F3;
+}
+
+.mn-section-heading {
+    font-weight: 500;
+    font-family: poppins;
+  padding: 0 16px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #000000;
+  
+  text-transform: uppercase;
+}
+
+/* Namespaced Slider Logic */
+.mn-slider-track {
+  display: flex;
+  gap: 16px; 
+  overflow-x: auto;
+  padding: 0 16px 24px 16px; 
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+}
+
+.mn-slider-track::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Facility Specific Styling */
+.mn-facility-item {
+  flex: 0 0 217px; 
+  height: 238px;  
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #EAEAEA;
+  scroll-snap-align: start;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mn-img-container {
+  position: relative;
+  height: 110px;
+}
+
+.mn-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mn-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #2D4A3E;
+}
+
+.mn-card-body {
+  padding: 12px;
+}
+
+.mn-card-title {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #508066;
+}
+
+.mn-card-desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Testimonial Specific Styling */
+.mn-testimonial-item {
+  flex: 0 0 240px; 
+  min-height: 307px;   background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.mn-quote-mark {
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #C5EFD8;
+  font-size: 40px;
+  
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.mn-star-rating {
+  color: #FFB800;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.mn-quote-text {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+.mn-author-name {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 13px;
+  color: #2D4A3E;
+}
+/* premium fecilotioes ends */
+
+
+
+/* footer section */
+/* Contact Section Background */
+.mn-contact-wrapper {
+    font-family: poppins;
+  background-color: #1A2E26; 
+  padding: 20px 24px 2px 24px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mn-contact-eyebrow {
+  color: #EEB13D;
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.mn-contact-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.mn-contact-subtitle {
+  font-size: 14px;
+  color: #CBD5C0;
+  margin-bottom: 40px;
+}
+
+/* Contact Buttons */
+.mn-contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mn-contact-btn {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.mn-icon-box {
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mn-contact-btn span {
+  font-size: 12px;
+}
+
+/* Static Footer Section */
+.mn-static-footer {
+  background-color: #1A2E26; 
+  padding: 0 16px 40px 16px; 
+}
+
+.mn-footer-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.mn-availability-text {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.mn-cta-button {
+  width: 100%;
+  background-color: #D6C19D;
+  color: #1A2E26;
+  border: none;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+
+/* Adjusted Grid for Desktop & Mobile */
+.mn-contact-grid {
+  display: flex;
+  justify-content: center; 
+  gap: 24px;               
+  max-width: 400px;        
+  margin: 0 auto 20px auto;
+}
+
+.mn-contact-btn {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+  width: 80px;             
+}
+
+
+@media (min-width: 768px) {
+  .mn-contact-grid {
+    gap: 40px;       
+  }
+}
+/* footer section ends */
+
+
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .intro {
+        padding: 0 10%;
+        margin-top: 50px;
+    }
+
+    .brand-title {
+        font-size: 48px;
+    }
+
+    #logo {
+        max-width: 180px;
+    }
+
+    .peaceful-list {
+        overflow-x: visible; 
+        gap: 25px;
+       
+    }
+
+    .each-peaceful {
+        flex: 0 0 150px; 
+        height: 220px;
+    }
+
+    .peaceful-list-text p {
+        font-size: 13px;
+    }
+
+
+    .star-group {
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.3);
+        display: inline-flex;
+        padding-right: 20px;
+    }
+    #discover {
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    }
+}
+
+
+
+
+
+/* centering contents in desk */
+/* Media query for Tablet and Desktop (768px and up) */
+@media (min-width: 768px) {
+    
+    /* Center the Headings for both sections */
+    .mn-section-heading {
+        text-align: center;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px; 
+    }
+
+    /* Center the Sliders on the screen */
+    .mn-slider-track {
+        justify-content: center; 
+        padding-left: 0;
+        padding-right: 0;
+        overflow-x: visible; 
+    }
+
+    /* Center the text inside the Facility Cards */
+    .mn-card-body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Center the text and stars inside the Testimonial Cards */
+    .mn-testimonial-item {
+        text-align: center;
+        align-items: center; 
+    }
+
+    .mn-quote-text {
+        text-align: center;
+    }
+
+    .mn-author-name {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
